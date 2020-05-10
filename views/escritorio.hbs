@@ -1,0 +1,17 @@
+{{> header }}
+<div class="flex-center position-ref full-height bg-info text-white">
+    <div class="content">
+        <div class="alert alert-danger small" role="alert" id="error" style="display: none;"></div>
+        <h1>Escritorio <span>{{ escritorio }}</span></h1>
+        <h4>Atendiendo a <small id="numero_atencion">....</small></h4>
+        <button class="btn btn-primary">
+            Atender siguiente ticket
+        </button>
+        <br>
+        <input type="hidden" id="escritorio" value="{{ escritorio }}">
+    </div>
+</div>
+<script src="js/libs/jquery.min.js"></script>
+<script src="socket.io/socket.io.js"></script>
+<script src="js/escritorio.js"></script>
+{{> footer }}

@@ -1,0 +1,18 @@
+{{> header }}
+<div class="flex-center position-ref full-height bg-info text-white">  
+    <div class="content">
+        <h1 class="mb-4">Programa de Tickets</h1>
+        <div class="mb-4">
+            <a class="btn btn-primary" href="/publico">Pantalla publica</a>
+            <a class="btn btn-success" href="/crear">Crear Tickets</a>
+        </div>
+        <form action="/escritorio" method="POST">
+            <input name="escritorio" type="number" class="form-control" placeholder="Escritorio" autofocus required>
+            <br>
+            <button type="submit" class="btn btn-primary">
+                Ingresar
+            </button>
+        </form>
+    </div>
+</div>
+{{> footer }}
